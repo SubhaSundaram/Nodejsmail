@@ -19,7 +19,7 @@ var express = require('express'),
     //       secure: true,
     //       auth: {
     //           user: 'subhasundar664@gmail.com',
-    //           pass: 'almighty@@'
+    //           pass: ''
     //       }
     //   });
     var smtpTransport = nodeMailer.createTransport({
