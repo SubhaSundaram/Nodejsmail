@@ -35,7 +35,13 @@ var express = require('express'),
           to: req.body.to, // list of receivers
           subject: req.body.subject, // Subject line
           text: req.body.body, // plain text body
-          html: '<b>NodeJS Email Tutorial</b>' // html body
+          html: '<b>NodeJS Email Tutorial</b>', // html body
+          attachment:[
+              {
+                  filename:text.txt,
+                  content:'HelloWorld'
+              }
+          ]
       };
 
       smtpTransport.sendMail(mailOptions, (error, info) => {
